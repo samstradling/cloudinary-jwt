@@ -1,4 +1,5 @@
 # Cloudinary JWT
+![Coverage](https://raw.githubusercontent.com/samstradling/cloudinary-jwt/master/coverage.svg?sanitize=true)
 
 A simple python app that uploads images to [Cloudinary](https://cloudinary.com), authenticates uses [JSON Web Tokens](https://jwt.io/).
 
