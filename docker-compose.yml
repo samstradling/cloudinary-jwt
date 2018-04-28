@@ -1,0 +1,15 @@
+---
+version: '3'
+services:
+  cloudinary_jwt:
+    build: . # To pull from docker hub replace with: `image: "samstradling/cloudinary-jwt"`
+    ports:
+      - "${CLOUD_PORT:-3000}:3000"
+    environment:
+      - CLOUD_NAME=${CLOUD_NAME}
+      - CLOUD_APIKEY=${CLOUD_APIKEY}
+      - CLOUD_SECRET=${CLOUD_SECRET}
+      - CLOUD_JWT_SECRET=${CLOUD_JWT_SECRET}
+      - CLOUD_HOST=${CLOUD_HOST:-0.0.0.0}
+      - CLOUD_CORS=${CLOUD_CORS}
+      - CLOUD_DEFAULT_FOLDER=${CLOUD_DEFAULT_FOLDER}

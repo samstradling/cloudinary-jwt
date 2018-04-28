@@ -1,0 +1,10 @@
+{
+    "tansform_format_auto_quality_eco": {
+        "from": "https://res.cloudinary.com/dizrhaqy4/image/upload/v1524865074/chestnut/slider_01_dbvvxf.jpg",
+        "to": "https://res.cloudinary.com/dizrhaqy4/image/upload/f_auto,q_auto:eco/v1524865074/chestnut/slider_01_dbvvxf.jpg"
+    },
+    "tansform_thumb_w100_h100": {
+        "from": "https://res.cloudinary.com/dizrhaqy4/image/upload/v1524865074/chestnut/slider_01_dbvvxf.jpg",
+        "to": "https://res.cloudinary.com/dizrhaqy4/image/upload/c_thumb,f_auto,h_100,w_100,q_auto:eco/v1524865074/chestnut/slider_01_dbvvxf.jpg"
+    }
+}
