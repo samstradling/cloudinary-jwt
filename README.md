@@ -27,6 +27,14 @@ Alternatively, use `docker-compose`:
 docker-compose up --build
 ```
 
+#### Python `venv`
+To run in a python virtual environment, create and source the venv, then install the dependencies:
+```bash
+$ python3.6 -m venv venv
+$ source venv/bin/activate
+$ pip install -r requirements-dev.txt
+```
+
 ### Parameters
 Parameters are read from command line arguments, or environment varibles, not both.
 
@@ -71,7 +79,7 @@ optional arguments:
 ### Missing environment variable(s)
 No parameters passed through either through parameters or environment variables.
 ### ModuleNotFoundError: No module named 'cloudinary'
-Make sure to install requirements `pip install -r requirements.txt`
+Make sure to install requirements `pip install -r requirements-dev.txt`
 
 ## Routes
 Authorisation is provided by the `Authorization: Bearer <token>` header, test tokens can be generated using sites like [jwt.io](https://jwt.io/#debugger-io).

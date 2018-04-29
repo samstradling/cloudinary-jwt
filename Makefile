@@ -3,7 +3,6 @@ OWNER=samstradling
 REPO=cloudinary-jwt
 
 setup:
-	pip install -r requirements.txt --quiet
 	pip install -r requirements-dev.txt --quiet
 
 test: setup
