@@ -1,5 +1,6 @@
 # Cloudinary JWT
 ![Coverage](https://raw.githubusercontent.com/samstradling/cloudinary-jwt/master/coverage.svg?sanitize=true)
+[![Build Status](https://travis-ci.org/samstradling/cloudinary-jwt.svg?branch=master)](https://travis-ci.org/samstradling/cloudinary-jwt)
 
 A simple python app that uploads images to [Cloudinary](https://cloudinary.com), authenticates uses [JSON Web Tokens](https://jwt.io/).
 
@@ -24,6 +25,14 @@ docker run \
 Alternatively, use `docker-compose`:
 ```bash
 docker-compose up --build
+```
+
+#### Python `venv`
+To run in a python virtual environment, create and source the venv, then install the dependencies:
+```bash
+$ python3.6 -m venv venv
+$ source venv/bin/activate
+$ pip install -r requirements-dev.txt
 ```
 
 ### Parameters
@@ -70,7 +79,7 @@ optional arguments:
 ### Missing environment variable(s)
 No parameters passed through either through parameters or environment variables.
 ### ModuleNotFoundError: No module named 'cloudinary'
-Make sure to install requirements `pip install -r requirements.txt`
+Make sure to install requirements `pip install -r requirements-dev.txt`
 
 ## Routes
 Authorisation is provided by the `Authorization: Bearer <token>` header, test tokens can be generated using sites like [jwt.io](https://jwt.io/#debugger-io).
